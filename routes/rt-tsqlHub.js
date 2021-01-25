@@ -11,6 +11,6 @@ router.get('/', (req, res, next) => {
   res.send(req)
 })
 
-router.post('/', v_InventoryMasterQuery)
+router.post('/queryInvMasterTable', v_InventoryMasterQuery)
 
 module.exports = router;
