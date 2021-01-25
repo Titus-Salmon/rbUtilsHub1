@@ -3,5 +3,5 @@ node_modules
 package-lock.json
 package.json
 /frontend/public/build/
-/backend/public/images/
+/public/images/
 

@@ -26,14 +26,25 @@
   //     });
   // }
   async function showIMWobj() {
-    let url = 'http://localhost:3333/imwObj';
-    let response = await fetch(url);
+    let url = 'http://localhost:3333/imwObj'
+    let response = await fetch(url)
 
     let final_response = await response.json(); // read response body and parse as JSON
 
     console.log(
       `JSON.stringify(final_response)==> ${JSON.stringify(final_response)}`
-    );
+    )
+  }
+
+  async function vInvMasterQuery() {
+    let url = 'http://localhost:3333/imwObj'
+    let response = await fetch(url)
+
+    let final_response = await response.json(); // read response body and parse as JSON
+
+    console.log(
+      `JSON.stringify(final_response)==> ${JSON.stringify(final_response)}`
+    )
   }
 </script>
 

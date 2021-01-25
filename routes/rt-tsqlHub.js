@@ -20,7 +20,7 @@ const {
 } = require('../sqlArch/populateTsqlTable')
 const {
   v_InventoryMasterQuery
-} = require('../sqlArch/v_InventoryMasterQuery')
+} = require('../backendLogic/tsqlHub/v_InventoryMasterQuery')
 // const {
 //   custPlusAddr
 // } = require('../sqlArch/custPlusAddr/custPlusAddr')
