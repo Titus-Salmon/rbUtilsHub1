@@ -5,6 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const cors = require('cors') //t0d
+const helmet = require('helmet') //t0d
+const dotenv = require('dotenv') //t0d
+dotenv.config() //t0d
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -20,6 +23,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(cors()) //t0d
+app.use(helmet()) //t0d
 
 app.use(logger('dev'));
 app.use(express.json());
