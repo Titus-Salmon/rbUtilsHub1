@@ -44,9 +44,11 @@
 
     console.log(
       // `JSON.stringify(final_response)==> ${JSON.stringify(final_response)}`
-      `final_response==> ${final_response}``JSON.parse(final_response)==> ${JSON.parse(
-        final_response
-      )}`
+      `final_response==> ${final_response}`
+    );
+
+    console.log(
+      `JSON.stringify(final_response)==> ${JSON.stringify(final_response)}`
     );
   }
 </script>
