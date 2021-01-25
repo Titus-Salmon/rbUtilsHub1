@@ -169,10 +169,11 @@ module.exports = {
                 console.log(`JSON.stringify(result['columns'][2])==> ${JSON.stringify(result['columns'][2])}`)
                 showcatapultResults(result)
 
-                res.render('vw-v_InventoryMaster_query2', { //render searchResults to vw-retailCalcPassport page
-                    title: 'vw-v_InventoryMaster_query2',
-                    catapultResults: catapultResArr,
-                })
+                // res.render('vw-v_InventoryMaster_query2', { //render searchResults to vw-retailCalcPassport page
+                //     title: 'vw-v_InventoryMaster_query2',
+                //     catapultResults: catapultResArr,
+                // })
+                res.json(catapultResArr)
             })
         })
     })
