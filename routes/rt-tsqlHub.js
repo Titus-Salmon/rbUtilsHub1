@@ -9,8 +9,8 @@ const {
 
 router.get('/', (req, res, next) => {
   res.json({
-    "req.length": req.length,
-    "req.body": req.body,
+    // "req.length": req.length,
+    // "req.body": req.body,
     "req": req
   })
 })
