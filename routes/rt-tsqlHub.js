@@ -8,7 +8,7 @@ const {
 
 
 router.get('/', (req, res, next) => {
-  res.json(req)
+  res.send(req)
 })
 
 router.post('/', v_InventoryMasterQuery)
