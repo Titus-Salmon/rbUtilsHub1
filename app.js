@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 
 const emptyRouter = require('./routes/rt-empty') //t0d
 const imwObjRouter = require('./routes/rt-imwObj') //t0d
+const tsqlHubRouter = require('./routes/rt-tsqlHub') //t0d
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use('/users', usersRouter);
 
 app.use('/empty', emptyRouter) //t0d
 app.use('/imwObj', imwObjRouter) //t0d
+app.use('/tsqlHub', tsqlHubRouter) //t0d
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
